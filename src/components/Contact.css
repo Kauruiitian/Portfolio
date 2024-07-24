@@ -1,0 +1,133 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    padding: 40px 20px;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color: transparent; /* Ensure background is transparent */
+    position: relative; /* Added for positioning icons */
+    margin-bottom: 100px; /* Add margin to ensure spacing from the footer */
+    z-index: 1; /* Ensure contact section is above any other content */
+  }
+  
+  .contact-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Left half width */
+    padding: 20px;
+    position: relative; /* Added for positioning icons within this section */
+  }
+  
+  .contact-description {
+    padding-top: 0px; /* Adjust padding between image and description */
+    padding-bottom: 0px;
+  }
+  
+  .contact-description p {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  
+  .contact-image-full {
+    width: 100%;
+    padding: 0; /* Remove padding below the image */
+    margin: 0; /* Remove margin below the image */
+  }
+  
+  .contact-image-full img {
+    margin-top: 0;
+    width: 65%; /* Set width */
+    height: 90%; /* Set height */
+  }
+  
+  .contact-form-info {
+    flex: 1;
+    padding: 20px; /* Increased padding for better spacing */
+    position: relative; /* Added for positioning icons */
+  }
+  
+  .contact-form-info h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .contact-form-info .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-form-info .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .contact-form-info .form-group input,
+  .contact-form-info .form-group textarea {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bd8cf5;
+    border-radius: 4px;
+  }
+  
+  .contact-form-info .form-group textarea {
+    resize: vertical;
+  }
+  
+  .contact-form-info button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form-info button:hover {
+    background-color: #444;
+  }
+  
+  .contact-icons {
+    position: absolute; /* Position at the bottom right */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    display: flex;
+    gap: 10px; /* Spacing between icons */
+  }
+  
+  .facebook-icon {
+    color: #3b5998; /* Facebook color */
+  }
+  
+  .whatsapp-icon {
+    color: #25D366; /* WhatsApp color */
+  }
+  
+  .linkedin-icon {
+    color: #0077b5; /* LinkedIn color */
+  }
+  
+  .instagram-icon {
+    color: #E1306C; /* Instagram color */
+  }
+  
+  .twitter-icon {
+    color: #1DA1F2; /* Twitter color */
+  }
+  

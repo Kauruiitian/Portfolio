@@ -1,0 +1,86 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color: transparent;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.projects h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent black background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.project-card p {
+    margin: 10px 0;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.skills-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.skills-tech-item {
+    background: #d474c8;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.contact-call-to-action {
+    margin: 40px 0;
+    font-size: 1.2rem;
+}
+
+.contact-call-to-action a {
+    color: #bbe20d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-call-to-action a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,131 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color: transparent;
+  }
+  
+  .about-container {
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: height 0.3s ease;
+  }
+  
+  .about-image-container.half {
+    height: 50%;
+  }
+  
+  .about-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .intro-text {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .about-buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .about-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:nth-child(1) {
+    background-color: #f28b82;
+  }
+  
+  .about-button:nth-child(2) {
+    background-color: #fbbc04;
+  }
+  
+  .about-button:nth-child(3) {
+    background-color: #34a853;
+  }
+  
+  .about-button:hover {
+    opacity: 0.8;
+  }
+  
+  .about-content {
+    width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .about-content.hidden {
+    display: none;
+  }
+  
+  .about-details {
+    width: 100%;
+  }
+  
+  .about-details-section {
+    text-align: left;
+  }
+  
+  .about-details-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .about-details-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-details-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  

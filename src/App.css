@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+/* App styles */
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the top-left */
+  flex-grow: 1; /* Allow the App to grow to fill the remaining space */
+  width: 100%;
+}
+
+/* Header styles */
+.header {
+  background: #282c34;
+  padding: 40px 20px; /* Increase padding to increase header size */
   color: white;
+  text-align: center;
+  width: 100%; /* Full width header */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar styles */
+.navbar {
+  background: #333;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%; /* Full width navbar */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar li {
+  margin-left: 20px; /* Add margin between items */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1; /* Expand to fill remaining height */
+}
+
+/* Section styles */
+section {
+  width: 100%; /* Each section takes full width */
+  padding: 40px 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.home, .about, .projects, .contact {
+  border: none; /* Remove border to eliminate lines between sections */
+}
+
+.home h2, .about h2, .projects h2, .contact h2 {
+  color: #333;
+}
+
+.home p, .about p, .projects p, .contact p {
+  color: #555;
+}
+
+/* Footer styles */
+.footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-image: url('${backgroundImage}'); /* Use imported image variable */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+  background-color: transparent; /* Ensure background is transparent */
 }

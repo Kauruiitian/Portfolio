@@ -1,0 +1,100 @@
+.home {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .left-half img {
+    border-radius: 50%;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    transition: opacity 0.3s ease;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8); /* Dark background for better readability */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: center;
+    width: 200px; /* Adjust width as needed */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .left-half:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background: transparent; /* Make background fully transparent */
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Set a maximum width */
+  }
+  
+  .box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  .box p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ff47ac; /* Change to a different color, like Tomato */
+    font-family: 'Dancing Script', cursive; /* Apply the custom font */
+    font-weight: 400; /* Adjust weight as needed */
+  }
+  
+  .cta-button {
+    background-color: #59d4f3;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  

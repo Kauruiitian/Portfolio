@@ -1,0 +1,52 @@
+/* src/Header.css */
+
+.header {
+    position: relative;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color:transparent; /* Fallback color */
+    color: transparent;
+    text-align: center;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    height: 100vh; /* Set header height to full viewport height */
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust opacity as needed */
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above background image */
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,12 @@
+.footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-image: url('../assets/pxfuel (3).jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-color: transparent; /* Ensure background is transparent */
+  }
+  
